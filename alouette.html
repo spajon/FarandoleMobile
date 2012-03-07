@@ -2,22 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> 
     	<title>Alouette</title>
-    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-    	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-    	<script src="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<link rel="stylesheet" href="css/themes/farandolecss.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" /> 
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
     </head> 
     <body>
         <div data-role="page" data-theme="b" id="alouette" data-url="alouette">
             <div data-role="header" data-theme="b">
-                <a href="index.html" data-iconpos="notext" data-role="button" data-icon="home" title=" Home "> Home </a>
+                <a href="index.html" data-iconpos="notext" data-role="button" data-icon="home" title=" Home "></a>
                 <h1><!--img src="images/farandoleLogoSmall.jpg" border="0" id="homeLogo"-->Alouette</h1>
-            </div><!-- /header -->
-        
+            </div>
+			<!-- /header -->
             <div data-role="content">
-                <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
-                    <li class="ui-li ui-li-static ui-body-b">
+                <ul data-role="listview" data-inset="false" >
+                    <li data-theme="c">
                         <!--video id="movie" width="480" height="360" preload controls>
 							<source src="videos/Alouette.ogv">
                             <source src="videos/Alouette.mp4">
@@ -26,10 +27,6 @@
         			</li>
     			</ul>
         	</div><!-- /content -->
-        	
-        	<div data-role="footer" data-theme="b">
-        		<!--h4>Footer content</h4-->
-        	</div><!-- /footer -->
         </div>
     </body>
 </html>
